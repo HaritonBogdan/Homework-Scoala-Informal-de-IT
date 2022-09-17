@@ -1,0 +1,433 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* De aici incepe codul meu ------------------------------------------------------------------------------------*/
+
+html {
+    font-family: 'Playfair Display', serif;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 5px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav a {
+    background-color: hsl(224, 86%, 58%);
+    padding: 20px 40px;
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover {
+    border-color: rgb(58, 106, 240);
+    box-shadow: 0 0 10px 1px rgb(102, 138, 238);
+}
+
+section {
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+    justify-content: space-between;
+    margin: 15px auto;
+}
+
+section h1 {
+    font-size: 3em;
+    padding: 5px 10px 15px 10px;
+    border-right: 1px solid black;
+}
+
+section h2 {
+    font-size: 1.3em;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section div {
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+main {
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+    justify-content: space-between;
+    margin: 15px auto;
+}
+
+main img {
+    width: 100%;
+    max-width: 900px;
+    height: 400px;
+}
+
+main p {
+    color: white;
+    background-color: rgb(58, 106, 240);
+    width: 300px;
+    height: 110px;
+    padding: 10px;
+    border-radius: 1px;
+    position: absolute;
+    top: 200px;
+    left: 550px;
+    box-shadow: 5px 5px 10px 1px black;
+}
+
+main a {
+    color: white;
+    font-size: 2.3em;
+    text-align: center;
+    background-color: rgb(58, 106, 240);
+    padding: 20px 40px;
+    text-decoration: none;
+    width: 500px;
+    height: 40px;
+    border-radius: 2px;
+    position: absolute;
+    top: 530px;
+    left: 770px;
+    box-shadow: 5px 5px 10px 1px black;
+}
+
+
+main a:hover {
+    border-color: rgb(58, 106, 240);
+    box-shadow: 0 0 10px 1px rgb(102, 138, 238);
+}
+
+#middlePart {
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 50px auto;
+}
+
+#middlePart div {
+    background-color: rgb(224, 224, 224);
+    /* border: 1px solid black; */
+    padding: 10px;
+    height: 340px;
+    display: flex;
+    flex-direction: column;
+}
+
+#middlePart div h3 {
+    text-align: center;
+    font-size: 1.5em;
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+#middlePart div span {
+    width: 260px;
+    height: 100px;
+    background-color: rgb(34, 34, 34);
+    border: 5px inset rgb(255, 255, 255);
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2em;
+}
+
+#middlePart div p {
+    width: 260px;
+    margin-bottom: 20px;
+}
+
+#middlePart div button {
+    border: none;
+    background-color: rgb(224, 224, 224);
+    color: blue;
+    display: flex;
+    align-self: flex-end;
+}
+
+#endPart {
+    border-top: 1px dashed black;
+    padding-top: 30px;
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* margin: 50px auto; */
+}
+
+#endPart span {
+
+    width: 250px;
+    height: 250px;
+    background-color: rgb(34, 34, 34);
+    border: 5px inset rgb(255, 255, 255);
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2em;
+}
+
+#endPart section {
+    width: 400px;
+    height: 240px;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#endPart section h3 {
+    /* border: 1px solid black; */
+
+    text-align: center;
+    font-size: 1.5em;
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+#endPart section p {
+    width: 350px;
+}
+
+#endPart section button {
+    border: none;
+    background-color: white;
+    align-self: flex-end;
+    color: blue;
+    padding-top: -10px;
+
+}
+
+#endPart aside {
+    width: 200px;
+    height: 180px;
+    background-color: rgb(223, 223, 223);
+    padding: 10px;
+}
+
+#endPart aside h3 {
+    text-align: center;
+    font-size: 1.4em;
+    opacity: 0.7;
+    border-bottom: 1px dashed rgb(110, 110, 110);
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+#endPart aside ul {
+    display: flex;
+    flex-direction: column;
+}
+
+
+#endPart aside li {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: space-between;
+}
+
+#endPart aside a {
+    font-size: 1.2em;
+    text-decoration: none;
+    border-bottom: 1px solid rgb(110, 110, 110);
+
+}
+
+footer {
+    padding-top: 30px;
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+footer div {
+    width: 160px;
+    height: 100px;
+    background-color: rgb(34, 34, 34);
+    border: 5px inset rgb(255, 255, 255);
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.5em;
+}
+
+#theEnd {
+    margin-top: 10px;
+    padding-top: 40px;
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+    flex-direction: row;
+    background-color: hsl(224, 86%, 58%);
+}

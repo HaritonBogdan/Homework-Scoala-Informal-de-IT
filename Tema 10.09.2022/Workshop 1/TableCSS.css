@@ -1,0 +1,31 @@
+#table {
+    position: relative;
+    top: 300px;
+    left: 25%;
+    border-collapse: separate;
+    border-spacing: 15px 15px;
+}
+
+.bigRaw {
+    width: 1000px;
+    height: 50px;
+    border: 5px solid yellow;
+    border-radius: 5px;
+    background-color: yellow;
+
+
+}
+
+.mediumRaw {
+    height: 50px;
+    border: 5px solid cyan;
+    background-color: cyan;
+    border-radius: 5px;
+}
+
+.smallRaw {
+    height: 50px;
+    border: 5px solid blue;
+    background-color: blue;
+    border-radius: 5px;
+}
