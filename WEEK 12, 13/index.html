@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Week 12</title>
+    <link href="./styles.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="modals-container"></div>
+    <main id="blog">
+      <div class="hidden" id="blog-profile"></div>
+      <div id="blog-list">
+        <div class="blog-info">
+          <h1>Blog</h1>
+          <div class="blog-actions">
+            <button id="create-new-article">New Article</button>
+            <input type="text" />
+          </div>
+        </div>
+        <div id="blog-list-container"></div>
+      </div>
+    </main>
+    <script src="./sources/Modal.js"></script>
+    <script src="./sources/Model.js"></script>
+    <script src="./sources/View.js"></script>
+    <script src="./sources/articles/ArticleList/ArticleList.model.js"></script>
+    <script src="./sources/articles/ArticleList/ArticleList.view.js"></script>
+    <script src="./sources/articles/ArticleItem/ArticleItem.model.js"></script>
+    <script src="./sources/articles/ArticleItem/ArticleItem.view.js"></script>
+    <script src="./sources/articles/ArticleModal/ArticleModal.model.js"></script>
+    <script src="./sources/articles/ArticleModal/ArticleModal.view.js"></script>
+    <script src="./sources/App.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
